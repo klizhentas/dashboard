@@ -22,15 +22,16 @@ function (Settings) {
     datasources: {
       influxdb: {
         type: 'influxdb',
-        url: "http://localhost:8086/db/database_name",
-        username: 'admin',
-        password: 'admin',
+        url: "http://localhost:8086/db/metrics",
+        username: 'metrics',
+        password: 'metrics',
+        default: true,
       },
       grafana: {
         type: 'influxdb',
         url: "http://localhost:8086/db/grafana",
-        username: 'admin',
-        password: 'admin',
+        username: 'metrics',
+        password: 'metrics',
         grafanaDB: true
       },
     },
